@@ -1,5 +1,14 @@
 :root{--bg-red:#e50914;--bg-white:#f7f7f7;--bg-black:#181919;}
 *,*::before,*::after{margin:0;padding:0;box-sizing:inherit;}
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+flex-direction: column;
+
+
 html{box-sizing:border-box;font-size:62.5%;}
 .jwplayer.jw-skin-netflix .jw-title-primary{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;color:var(--bg-white);margin:5rem 0 0 5rem;font-family:rubik, Arial, sans-serif;font-weight:700;text-transform:uppercase;}
 .jwplayer.jw-skin-netflix .jw-title-secondary{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;color:var(--bg-white);margin:-6rem 0 0 5rem;font-family:rubik, Arial, sans-serif;font-weight:500;}
