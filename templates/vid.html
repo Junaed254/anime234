@@ -4,7 +4,7 @@
 <head>
     <link rel="icon" type="image/x-icon"
         href="../static/css/favicon.ico">
-    <title>Allwish VideoPlayer</title>
+    <title>AnimeDex VideoPlayer</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +17,15 @@
         .container {
             width: 100%;
             height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .logo {
+            max-width: 50%;
+            margin-bottom: 1em;
         }
 
         video {
@@ -34,6 +43,7 @@
 <body>
 
     <div class="container">
+        <img class="logo" src="../static/img/logo.png" alt="AnimeDex Logo">
         <video controls crossorigin playsinline>
             <source type="application/x-mpegURL" src="https://techz-cors-bypass.herokuapp.com/{{ m3u8 }}">
         </video>
